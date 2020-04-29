@@ -21,10 +21,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #pragma once
 
 // place overrides here
-#undef  TAPPING_FORCE_HOLD
-#define RETRO_TAPPING
+#define IGNORE_MOD_TAP_INTERRUPT // トライ中
+#define PERMISSIVE_HOLD          // 同時押し時に早めにHOLD動作をさせるならON
+#define TAPPING_FORCE_HOLD       // SFT_T()を使うなら無効のほうがよさげ
+#define RETRO_TAPPING            // TAPPING_TERMが短いなら有効のほうがよさげ
 #undef  TAPPING_TERM
-#define TAPPING_TERM 200
+#define TAPPING_TERM 50			 // RETRO_TAPPINGが有効なら短かくてもいい
 
 // If you need more program area, try select and reduce rgblight modes to use.
 
