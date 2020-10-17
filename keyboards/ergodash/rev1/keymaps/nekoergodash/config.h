@@ -26,7 +26,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define TAPPING_FORCE_HOLD       // SFT_T()を使うなら無効のほうがよさげ
 #define RETRO_TAPPING            // TAPPING_TERMが短いなら有効のほうがよさげ
 #undef  TAPPING_TERM
-#define TAPPING_TERM 50			 // RETRO_TAPPINGが有効なら短かくてもいい
+#define TAPPING_TERM 100		 // RETRO_TAPPINGが有効なら短かくてもいい
 
 /* Use I2C or Serial, not both */
 
