@@ -55,7 +55,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		KC_TAB ,    KC_Q,    KC_W,    KC_E,    KC_R,    KC_T, _______, _______,	_______, _______,
 		KC_LCTL,    KC_A,    KC_S,    KC_D,    KC_F,    KC_G, _______, _______,	_______, _______,
 		KC_LSFT,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B, KC_LBRC, _______,	_______, _______,
-		ADJUST ,  KC_ESC, KC_LGUI, KC_LALT, M_LOWER, M_LOWER, KC_SPC, KC_BSPC,	_______, _______,
+		ADJUST ,  KC_ESC, KC_LGUI, KC_LALT, KC_LALT, M_LOWER, KC_SPC, KC_BSPC,	_______, _______,
 		_______, _______, _______, _______, _______, _______, _______, _______,	_______, _______,
 
 		_______, _______,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,  KC_EQL, _______, _______,
@@ -89,7 +89,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		KC_TILD, KC_EXLM,   KC_AT, KC_HASH,  KC_DLR, KC_PERC, _______, _______,	_______, _______,
 		_______,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5, _______, _______,	_______, _______,
 		_______,   KC_F7,   KC_F8,   KC_F9,  KC_F10,  KC_F11, _______, _______,	_______, _______,
-		KC_CAPS,  KC_ESC, KC_LGUI, KC_LALT, _______,  KC_F20,  KC_SPC, KC_BSPC,	_______, _______,
+		KC_CAPS,  KC_ESC, KC_LGUI, KC_LALT, KC_LALT,  KC_F20,  KC_SPC, KC_BSPC,	_______, _______,
 		_______, _______, _______, _______, _______, _______, _______, _______,	_______, _______,
 
 		_______, _______, KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN,  KC_DEL,	_______, _______,
@@ -137,16 +137,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	/* Adjust
 	 *  Main Side (USB Cable Connected Side)
 	 *  ,---------------------------------------------------
-	 *  |                RTOG RMOD
-	 *  |                RHUI RSAI RVAI
+	 *  |                RTOG RMOD                       RST
+	 *  |                RHUI RSAI RVAI                  RST
 	 *  |                RHUD RSAD RVAD
-	 *  |                                               ERST
-	 *  |                                                RST
+	 *  |
+	 *  |
 	 *  `---------------------------------------------------
 	 *  Sub Side (USB Cable Not Connected Side)
 	 *  ,---------------------------------------------------
-	 *  |
-	 *  |
+	 *  |                MUTE VOL- VOL+
+	 *  |                STOP MPRV MNXT PLAY
 	 *  |
 	 *  |
 	 *  |
@@ -160,8 +160,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		_______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
 		_______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
 
-		_______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
-		_______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
+		_______, _______, KC_MUTE, KC_VOLD, KC_VOLU, _______, _______, _______, _______, _______,
+		_______, _______, KC_MSTP, KC_MPRV, KC_MNXT, KC_MPLY, _______, _______, _______, _______,
 		_______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
 		_______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
 		_______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
