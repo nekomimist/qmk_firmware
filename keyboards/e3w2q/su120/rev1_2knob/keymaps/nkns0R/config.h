@@ -21,7 +21,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #pragma once
 
 // place overrides here
-#define IGNORE_MOD_TAP_INTERRUPT // トライ中
+#undef  IGNORE_MOD_TAP_INTERRUPT // トライ中
 #define PERMISSIVE_HOLD          // 同時押し時に早めにHOLD動作をさせるならON
 #define TAPPING_FORCE_HOLD       // SFT_T()を使うなら無効のほうがよさげ
 #define RETRO_TAPPING            // TAPPING_TERMが短いなら有効のほうがよさげ
